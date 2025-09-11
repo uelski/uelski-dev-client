@@ -80,7 +80,7 @@ export default function RootLayout({
             </div>
           </nav>
           <form>
-            <h6 className="footer-title">Newsletter</h6>
+            <h6 className="footer-title">Get In Touch</h6>
             <fieldset className="w-80">
               <label>Enter your email address</label>
               <div className="join">

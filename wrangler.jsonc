@@ -8,5 +8,15 @@
     "assets": {
       "directory": ".open-next/assets",
       "binding": "ASSETS"
+    },
+    "routes": [
+    {
+      "pattern": "uelski.dev",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.uelski.dev",
+      "custom_domain": true
     }
+  ]
   }
