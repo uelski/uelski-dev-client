@@ -2,7 +2,6 @@
 
 import {useState, useEffect, useRef, useMemo} from "react";
 import { STORY_ITEMS, STORY_BLURB } from "@/data/story_items";
-import Image from "next/image";
 
 export default function Story() {
     const [active, setActive] = useState(0);
