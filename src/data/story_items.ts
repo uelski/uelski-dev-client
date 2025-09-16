@@ -60,3 +60,5 @@ export const STORY_ITEMS: StoryItem[] = [
       link: "https://www.du.edu/",
     },
 ];
+
+export const STORY_BLURB = "Originally from the Northeast, I currently call Denver home. I am a full stack developer with a passion for learning and building. Starting out as a junior frontend developer with only dev bootcamp experience, through hard work and a striving to continually build my knowledge and skills, I have grown into a full stack developer and startup co-founder with experience in a variety of technologies. I recently graduated from the University of Denver with a Masters in Data Science, and am interested in building upon my education and experience with Machine Learning and LLMs."

@@ -1,7 +1,7 @@
 "use client";
 
 import {useState, useEffect, useRef, useMemo} from "react";
-import { STORY_ITEMS, StoryItem } from "@/data/story_items";
+import { STORY_ITEMS, STORY_BLURB } from "@/data/story_items";
 import Image from "next/image";
 
 export default function Story() {
@@ -76,7 +76,9 @@ export default function Story() {
 
   return (
     <section id="about" className="py-16 container mx-auto px-4" aria-labelledby="about-title">
-        <h2 id="about-title" className="text-4xl font-bold text-center pb-10">Development Path</h2>
+        <h2 id="about-title" className="text-4xl font-bold text-center pb-10">About Me</h2>
+        <p className="text-center p-10 pt-0">{STORY_BLURB}</p>
+        <h3 id="about-blurb" className="text-2xl font-bold text-center pb-10">Development Path</h3>
         <div className="grid lg:grid-cols-[280px,1fr] gap-8 items-start">
             {/* Steps */}
             <nav className="flex justify-center items-center" aria-label="About timeline steps">
