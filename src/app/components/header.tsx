@@ -6,9 +6,9 @@ export default function Header() {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li><a>About</a></li>
-            <li><a>Work</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
     </div>

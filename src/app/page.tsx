@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import Story from "./components/story";
 import Work from "./components/work";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Story />
       <Work />
+      <Contact />
     </>
       
   );

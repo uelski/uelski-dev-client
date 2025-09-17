@@ -24,7 +24,7 @@ export default function Hero() {
           <p className="mb-5 text-xl">
             I am a full stack developer with a curious mind that I like to let wander.
           </p>
-          <button className="btn btn-secondary">Take a Look</button>
+          <a className="btn btn-secondary" href="#about">Take a Look</a>
         </div>
       </div>
 

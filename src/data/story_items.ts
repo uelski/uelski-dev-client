@@ -52,13 +52,13 @@ export const STORY_ITEMS: StoryItem[] = [
     {
       id: "university_of_denver",
       title: "University of Denver",
-      subtext: "Masters in Data Science",
+      subtext: "Master's in Data Science",
       period: "2022-2025",
       blurb:
-        "Masters in Data Science from the University of Denver. Focus on machine learning, data engineering, and MLOps.",
+        "Master's in Data Science from the University of Denver. Focus on machine learning, data engineering, and MLOps.",
       img: "du_logo.webp",
       link: "https://www.du.edu/",
     },
 ];
 
-export const STORY_BLURB = "Originally from the Northeast, I currently call Denver home. I am a full stack developer with a passion for learning and building. Starting out as a junior frontend developer with only dev bootcamp experience, through hard work and a striving to continually build my knowledge and skills, I have grown into a full stack developer and startup co-founder with experience in a variety of technologies. I recently graduated from the University of Denver with a Masters in Data Science, and am interested in building upon my education and experience with Machine Learning and LLMs."
+export const STORY_BLURB = "Originally from the Northeast, I currently call Denver home. I am a full stack developer with a passion for learning and building. Starting out as a junior frontend developer with only dev bootcamp experience, through hard work and a striving to continually build my knowledge and skills, I have grown into a full stack developer and startup co-founder with experience in a variety of technologies. I recently graduated from the University of Denver with a Master's in Data Science, and am interested in building upon my education and experience with Machine Learning and LLMs."
