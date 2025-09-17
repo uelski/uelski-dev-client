@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Links from "./Links";
 
 export default function Hero() {
     return (
@@ -24,7 +25,8 @@ export default function Hero() {
           <p className="mb-5 text-xl">
             I am a full stack developer with a curious mind that I like to let wander.
           </p>
-          <button className="btn btn-secondary">Take a Look</button>
+          <a className="btn btn-secondary mb-6" href="#about">Take a Look</a>
+          <Links />
         </div>
       </div>
 
