@@ -1,7 +1,6 @@
 import { Resend } from "resend";
 import { EmailTemplate } from "@/app/components/EmailTemplate";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
     const form = await req.formData();
@@ -9,6 +8,13 @@ export async function POST(req: Request) {
     const message = String(form.get("message") || "");
     const honeypot = String(form.get("company") || "");
     const renderedAt = Number(form.get("renderedAt") || 0);
+    const apiKey = process.env.RESEND_API_KEY;
+
+    if (!apiKey) {
+        return Response.json({ ok: false, error: "Missing RESEND_API_KEY/TO_EMAIL" }, { status: 500 });
+    }
+    
+    const resend = new Resend(apiKey);
   
     // 1) Honeypot: if filled, silently succeed (pretend we accepted it)
     if (honeypot.trim()) {
