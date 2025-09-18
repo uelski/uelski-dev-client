@@ -17,8 +17,8 @@ export default function ContactForm() {
     
           setToast({ type: "success", msg: "Message sent!." });
           form.reset();
-        } catch (err: any) {
-          setToast({ type: "error", msg: err?.message ?? "Something went wrong." });
+        } catch (error) {
+          setToast({ type: "error", msg: "Something went wrong." });
         } finally {
           setLoading(false);
           // auto-hide toast 
