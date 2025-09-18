@@ -9,11 +9,12 @@ export async function POST(req: Request) {
     const honeypot = String(form.get("company") || "");
     const renderedAt = Number(form.get("renderedAt") || 0);
     const apiKey = process.env.RESEND_API_KEY;
+    const to = process.env.TO_EMAIL
 
-    if (!apiKey) {
+    if (!apiKey || !to) {
         return Response.json({ ok: false, error: "Missing RESEND_API_KEY/TO_EMAIL" }, { status: 500 });
     }
-    
+
     const resend = new Resend(apiKey);
   
     // 1) Honeypot: if filled, silently succeed (pretend we accepted it)
@@ -33,7 +34,7 @@ export async function POST(req: Request) {
     try {
         const { data, error } = await resend.emails.send({
           from: 'UELSKI <sam@uelski.dev>',
-          to: [process.env.TO_EMAIL || ""],
+          to: [to],
           subject: "New portfolio contact",
           react: EmailTemplate({ message, email }),
         });
