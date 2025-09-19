@@ -11,7 +11,7 @@ export default function Hero() {
       }}
       >
       <div className="hero-overlay bg-black/65"></div>
-      <div className="hero-content text-neutral-content text-center">
+      <div className="hero-content text-neutral-content text-center flex-col sm:flex-row">
         <Image
           className=""
           src="/sv-masthead.jpeg"

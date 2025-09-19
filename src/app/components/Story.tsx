@@ -76,25 +76,25 @@ export default function Story() {
   return (
     <section id="about" className="py-16 container mx-auto px-4" aria-labelledby="about-title">
         <h2 id="about-title" className="text-4xl font-bold text-center pb-10">About Me</h2>
-        <p className="text-center p-10 pt-0">{STORY_BLURB}</p>
+        <p className="text-center md:p-10 pb-10 pt-0">{STORY_BLURB}</p>
         <h3 id="about-blurb" className="text-2xl font-bold text-center pb-10">Development Path</h3>
         <div className="grid lg:grid-cols-[280px,1fr] gap-8 items-start">
             {/* Steps */}
             <nav className="flex justify-center items-center" aria-label="About timeline steps">
-                <ul className="steps steps-vertical lg:steps-horizontal">
+                <ul className="steps lg:steps-horizontal">
                     {list.map((item, i) => (
                         <li
                             key={item.id}
                             className={`step ${i <= active ? "step-primary" : ""}`}
                         >   
-                            <div className="min-w-48">
+                            <div className="hidden md:block min-w-48">
                                 <button
                                 className={`cursor-pointer text-center ml-2 mt-2 lg:mt-0 ${i === active ? "font-semibold" : ""}`}
                                 onClick={() => goTo(i)}
                                 aria-current={i === active ? "step" : undefined}
                                 >
                                 <div className="text-sm opacity-70">{item.period}</div>
-                                <div>{item.title}</div>
+                                <div className="hidden lg:block">{item.title}</div>
                                 </button>
                             </div>
                         </li>
@@ -102,10 +102,10 @@ export default function Story() {
                 </ul>
             </nav>
             {/* Carousel*/}
-            <div className="space-y-4 flex justify-center items-center flex-col">
+            <div className="overflow-x-hidden lg:overflow-x-auto space-y-4 flex justify-center items-center flex-col">
                 <div
                     ref={trackRef}
-                    className="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-4 bg-white"
+                    className="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-8 lg:p-4 bg-white"
                 >
                     {list.map((item, i) => (
                     <div
@@ -115,7 +115,7 @@ export default function Story() {
                         }}
                         className="carousel-item snap-center"
                     >
-                        <article className={`card bg-base-100 w-96 shadow-sm ${i === active ? "shadow-xl" : "shadow"}`}>
+                        <article className={`card bg-base-100 w-80 sm:w-96 shadow-sm ${i === active ? "shadow-xl" : "shadow"}`}>
                             <figure className="px-10 pt-10 h-56">
                                 <img
                                     src={`/${item.img}`}

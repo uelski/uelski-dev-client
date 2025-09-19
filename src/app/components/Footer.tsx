@@ -7,7 +7,7 @@ export default function Footer() {
         
         <p>Copyright © {new Date().getFullYear()} Sam Vredenburgh - All right reserved</p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end w-full sm:w-auto">
             <Links />
         </nav>
     </footer>
