@@ -2,7 +2,7 @@ import { LINK_ITEMS } from "@/data/link_items";
 
 export default function Links() {
   return (
-    <div className="flex flex-row gap-4 items-center justify-center">
+    <div className="flex flex-row gap-4 items-center justify-center w-full sm:w-auto">
         {LINK_ITEMS.map((link) => (
             <a key={link.id} href={link.url} target="_blank">
                 {
