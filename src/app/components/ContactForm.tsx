@@ -44,7 +44,9 @@ export default function ContactForm() {
             />
             {/* Optional "speed" trap: reject submissions sent too quickly */}
             <input className="hidden" type="hidden" name="renderedAt" value={String(Date.now())} />
-            <textarea className="textarea" name="message" placeholder="Message"></textarea>
+            <p className="text-sm opacity-70 text-left">Your Message:</p>
+            <textarea className="textarea w-[clamp(3rem,20rem,100%)] max-w-[35rem] sm:w-full" name="message" placeholder="Message"></textarea>
+            <p className="text-sm opacity-70 text-left">Your Email:</p>
             <label className="input validator">
                 <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <g
@@ -61,7 +63,7 @@ export default function ContactForm() {
                 <input type="email" name="email" placeholder="mail@site.com" required />
             </label>
             <div className="validator-hint hidden">Enter valid email address</div>
-            <button className="btn btn-neutral" type="submit">Submit</button>
+            <button className="btn btn-neutral" type="submit">SUBMIT</button>
             {toast && (
             <div role="alert" className={`absolute bottom-0 alert ${toast.type === "success" ? "alert-success" : "alert-error"}`}>
                     {toast.type === "success" && (
