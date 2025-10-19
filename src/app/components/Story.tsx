@@ -75,7 +75,7 @@ export default function Story() {
 
   return (
     <section id="about" className="py-16 container mx-auto px-4" aria-labelledby="about-title">
-        <h2 id="about-title" className="text-4xl font-bold text-center pb-10">About Me</h2>
+        <h2 id="about-title" className="text-4xl font-bold text-center pb-2">About Me</h2>
         <p className="text-center md:p-10 pb-10 pt-0">{STORY_BLURB}</p>
         <h3 id="about-blurb" className="text-2xl font-bold text-center pb-10">Development Path</h3>
         <div className="grid lg:grid-cols-[280px,1fr] gap-8 items-start">
@@ -135,7 +135,7 @@ export default function Story() {
                                 <div className="card-actions justify-end">
                                 {
                                     item.link && (
-                                        <a className="btn btn-primary" href={item.link} target="_blank">
+                                        <a className="btn btn-neutral" href={item.link} target="_blank">
                                             Learn More
                                         </a>
                                     )

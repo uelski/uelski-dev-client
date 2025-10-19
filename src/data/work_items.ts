@@ -13,6 +13,7 @@ export type WorkItem = {
     img: string;
     link?: string;
     old?: boolean;
+    github?: string;
 }
 
 export const WORK_ITEMS: WorkItem[] = [
@@ -21,7 +22,7 @@ export const WORK_ITEMS: WorkItem[] = [
         title: "Homefile",
         role: "Full Stack Developer/Co-founder",
         subtext: "Leading a small team of developers to create a new AI-powered platform for homeowners to manage their home.",
-        tech: [{"name": "NestJS", "badge": "secondary"}, {"name": "MongoDB", "badge": "warning"}, {"name": "React", "badge": "primary"}, {"name": "Typescript", "badge": "accent"}, {"name": "Docker", "badge": "neutral"}, {"name": "GCP", "badge": "warning"}, {"name": "OpenAI", "badge": "success"}, {"name": "Gemini", "badge": "warning"}, {"name": "LLMs", "badge": "error"}],
+        tech: [{"name": "NestJS", "badge": "secondary"}, {"name": "MongoDB", "badge": "warning"}, {"name": "React", "badge": "success"}, {"name": "Typescript", "badge": "accent"}, {"name": "Docker", "badge": "neutral"}, {"name": "GCP", "badge": "warning"}, {"name": "OpenAI", "badge": "success"}, {"name": "Gemini", "badge": "warning"}, {"name": "LLMs", "badge": "error"}],
         period: "2022-2025",
         img: "work/homefile-screenshot.jpg",
         link: "https://www.homefile.com/",
@@ -31,7 +32,7 @@ export const WORK_ITEMS: WorkItem[] = [
         title: "JennAir",
         role: "Full Stack Developer",
         subtext: "Premium Appliance Brand. Built out a new website for the brand using React on Adobe Experience Manager.",
-        tech: [{"name": "React", "badge": "primary"}, {"name": "TypeScript", "badge": "accent"}, {"name": "Sass", "badge": "info"}, {"name": "AEM", "badge": "error"}, {"name": "Figma", "badge": "warning"}],
+        tech: [{"name": "React", "badge": "success"}, {"name": "TypeScript", "badge": "accent"}, {"name": "Sass", "badge": "info"}, {"name": "AEM", "badge": "error"}, {"name": "Figma", "badge": "warning"}],
         period: "2020-2022",
         img: "work/ja-site.jpg",
     },
