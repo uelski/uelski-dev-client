@@ -10,7 +10,7 @@ export default function Hero() {
           "url(/Contour-Map.svg)",
       }}
       >
-      <div className="hero-overlay bg-black/65"></div>
+      <div className="hero-overlay bg-black/75"></div>
       <div className="hero-content text-neutral-content text-center flex-col sm:flex-row">
         <Image
           className=""
@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="max-w-md text-white">
           <h1 className="mb-5 text-5xl font-bold">Sam Vredenburgh</h1>
           <p className="mb-5 text-xl">
-            I am a full stack developer with a curious mind that I like to let wander.
+            I am a full stack developer and creative problem-solver with a curious mind that I like to follow.
           </p>
           <a className="btn btn-secondary mb-6" href="#about">Take a Look</a>
           <Links />
