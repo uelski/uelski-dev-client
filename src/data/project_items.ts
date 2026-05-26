@@ -3,6 +3,17 @@ import type {WorkItem} from "./work_items";
 
 export const PROJECT_ITEMS: WorkItem[] = [
     {
+        id: "blue-cypher",
+        title: "Blue Cypher",
+        role: "Denver Data Agentic AI",
+        subtext: "Agentic RAG application powered by the Denver Open Data Catalog.",
+        tech: [{"name": "FastAPI", "badge": "secondary"}, {"name": "LangGraph", "badge": "info"}, {"name": "React", "badge": "success"}, {"name": "Typescript", "badge": "accent"}, {"name": "Docker", "badge": "neutral"}, {"name": "GCP", "badge": "warning"}, {"name": "Vector DB", "badge": "error"}],
+        period: "2026",
+        img: "projects/bc_screenshot.png",
+        link: "https://bluecypher.ai/",
+        github: "https://github.com/uelski/den_bot_server"
+    },
+    {
         id: "caic",
         title: "CAIC Forecast Data",
         role: "ML Classification Project",
